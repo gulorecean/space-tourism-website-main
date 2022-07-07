@@ -1,0 +1,244 @@
+@media screen and (max-width: 740px) {
+    .Home {
+        display: flex;
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+        height: 100vh;
+        width: content;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20vh 0vw 5vh 0vw;
+    }
+
+    .Home section:first-child {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        max-width: 560px;
+        height: 60vh;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+
+    .Home section:last-child {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        height: 60vh;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 10vh;
+    }
+
+    nav, header {
+        z-index: 100;
+        padding-right: 5vw;
+    }
+
+    nav .portable-btn{
+        border: none;
+        background: transparent;
+        padding: 2vh;
+        cursor: pointer;
+    }
+
+    nav .container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20%;
+        padding: 5% 5%;
+    }
+
+    nav .left-part {
+        position: fixed;
+        top: 0;
+        right: -60vw;
+        height: 100vh;
+        width: 60vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: $colorBackground;
+        z-index: -1; 
+        transition: 0.5s;
+    }
+
+    nav .left-part.active{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 60vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: $colorBackground;
+        z-index: 100;
+        transition: 0.5s;
+    }
+
+    nav .left-part a {
+        height: 5vh;
+    }
+
+    nav .left-part::after {
+        display: none;
+    }
+
+    nav .left-part::before {
+        display: none;
+    }
+
+    nav .left-part a {
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav .left-part a:hover:before {
+        transform: translate(0vw, 0);
+        height: 100%;
+        width: 1vh;
+    }
+
+    nav .left-part a.active:before {
+        transform: translate(0vw, 0);
+        height: 100%;
+        width: 1vh;
+    }
+
+    .Langding-Page-Main-Btn{
+        height: 25vh;
+        width: 25vh;
+        z-index: 0;
+    }
+
+    .Langding-Page-Main-Btn::before {
+        height: 30vh;
+        width: 30vh;
+        z-index: -1;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    .Home {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20vh 0vw 5vh 0vw;
+    }
+
+    .Home section:first-child {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        max-width: 560px;
+        height: 60vh;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+
+    .Home section:last-child {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        height: 60vh;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 10vh;
+    }
+    nav .portable-btn {
+        display: none;
+    }
+
+    nav .left-part {
+        padding: 0;
+        height: 100%;
+    }
+
+    nav .left-part::before {
+        height: 100%;
+    }
+
+    nav .left-part::after {
+        display: none;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    nav .left-part a span:first-child{
+        display: none;
+    }
+
+    nav .left-part a:hover:before {
+        transform: translate(0, calc(5vh - 8px - 100%));
+    }
+
+    nav .left-part a.active:before {
+        transform: translate(0, calc(5vh - 8px - 100%));
+    }
+
+    .Langding-Page-Main-Btn{
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .Langding-Page-Main-Btn::before {
+        height: 25vh;
+        width: 25vh;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .Home {
+        background-image: url('../../assets/home/background-home-desktop.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 10vw;
+    }
+
+    .Home section:first-child {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        max-width: 560px;
+        height: 60vh;
+        justify-content: flex-end;
+        padding-bottom: 10vh;
+    }
+
+    .Home section:last-child {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        height: 60vh;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 10vh;
+    }
+
+    nav .portable-btn {
+        display: none;
+    }
+}

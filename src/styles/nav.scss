@@ -1,0 +1,91 @@
+header, nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-left: 4%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 740px) {
+    header, nav {
+        height: 10vh;
+    }
+}
+
+nav .left-part {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5vw;
+}
+
+nav .left-part::before {
+    content: "";
+    background-color: $colorBackground;
+    display: flex;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-10vw, 0);
+    transition: 0.25;
+}
+
+nav .left-part::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 30%;
+    background-color: $color2;
+    filter: brightness(0.4);
+    transform: translate(-35vw, 0);
+}
+
+nav .left-part a {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    margin: 0 1vw;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+nav .left-part a:hover:before {
+    position: relative;
+    content: "";
+    background-color: $color3;
+    height: 0.25vh;
+    width: 100%;
+    transform: translate(0, calc(6vh - 8px - 100%));
+    filter: opacity(0.4);
+}
+
+nav .left-part a.active:before {
+    position: relative;
+    content: "";
+    background-color: $color3;
+    height: 0.25vh;
+    width: 100%;
+    transform: translate(0, calc(6vh - 8px - 100%));
+    filter: opacity(1);
+}
+
+nav .left-part a:before {
+    position: relative;
+    content: "";
+    background-color: $color3;
+    height: 0.25vh;
+    width: 100%;
+    transform: translate(0, calc(6vh - 8px - 100%));
+    filter: opacity(0);
+}

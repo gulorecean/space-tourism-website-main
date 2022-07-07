@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+$color1: rgb(11, 13, 23);
+$colorBackground: rgb(26, 26, 38);
+$color2: rgb(208, 214, 249);
+$color3: rgb(255, 255, 255);
+
+@font-face {
+    font-family: 'bellefaire';
+    src: url("../assets/font/Bellefair-Regular.otf");
+}
+
+$font1: 'bellefaire';
+
+@font-face {
+    font-family: 'barlot';
+    src: url("../assets/font/Barlow-Regular.ttf");
+}
+
+$font2: 'barlot';
+
+h1 {
+    font-family: $font1;
+    font-size: 150px;
+    color: $color3;
+}
+
+h2 {
+    font-family: $font1;
+    font-size: 100px;
+    color: $color3;
+}
+
+h3 {
+    font-family: $font1;
+    font-size: 56px;
+    color: $color3;
+}
+
+h4 {
+    font-family: $font1;
+    font-size: 32px;
+    color: $color3;
+}
+
+h5 {
+    font-family: $font2;
+    font-size: 32px;
+    letter-spacing: 4.75px;
+    color: $color3;
+}
+
+p {
+    font-family: $font2;
+    color: $color2;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-transform: none;
+}
+
+.subheading1 {
+    font-family: $font1;
+    font-size: 28px;
+    color: $color3;
+    font-weight: 300;
+}
+
+.subheading2 {
+    font-family: $font2;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    color: $color2;
+}
+
+nav .left-part a span:first-child {
+    font-family: $font2;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: $color3;
+    margin-right: 0.25vw;
+    font-weight: 800;
+}
+
+nav .left-part a span:last-child {
+    font-family: $font2;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: $color2;
+    margin-left: 0.25vw;
+}
+
+body {
+    background-color: $color1;
+}
+a {
+    text-decoration: none;
+}

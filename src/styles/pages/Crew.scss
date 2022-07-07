@@ -1,0 +1,477 @@
+@media screen and (max-width: 740px) {
+    .Crew {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 10vh 0vw 0vh 0vw;
+    }
+
+    .Crew span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Crew span:first-child h5:first-child {
+        font-size: 20px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Crew span:first-child h5:last-child {
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Crew .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .Crew .container .container-text {
+        height: fit-content;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 7.5vh 10vw 7.5vh 10vw;
+    }
+
+    .Crew .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Crew .container .container-text div span {
+        margin-bottom: 2%;
+    }
+
+    .Crew .container .container-text div p {
+        width: fit-content;
+        max-width: 600px;
+        margin-top: 2%;
+    }
+
+    .Crew .container .container-img {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+    .Crew .container .container-img::after {
+        content: "";
+        display: flex;
+        height: 1px;
+        width: 90vw;
+        background-color: white;
+        opacity: 0.3;
+    }
+
+    .Crew .container .container-img span {
+        height: 40vh;
+        width: 40vh;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .Crew .container .container-img.Engineer span {
+        background-image: url("../../assets/crew/image-anousheh-ansari.png");
+    }
+
+    .Crew .container .container-img.Commander span {
+        background-image: url("../../assets/crew/image-douglas-hurley.png");
+    }
+
+    .Crew .container .container-img.Specialist span {
+        background-image: url("../../assets/crew/image-mark-shuttleworth.png");
+    }
+
+    .Crew .container .container-img.Pilot span {
+        background-image: url("../../assets/crew/image-victor-glover.png");
+    }
+
+    .Crew .container .SliderInPage {
+        height: fit-content;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        transform: translate(0, -5vh);
+    }
+
+    .Crew .SliderInPage-item {
+        height: 4vh;
+        width: 4vh;
+        display: flex;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.096);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0vh 2.75vw;
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.219);
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Crew .SliderInPage-item.active h5 {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    .Crew {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: flex-end;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 15vh 0vw 0vh 10vw;
+    }
+
+    .Crew span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Crew span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Crew span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Crew .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .Crew .container .container-text {
+        height: fit-content;
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10% 0 0 0;
+    }
+
+    .Crew .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Crew .container .container-text div span {
+        margin-bottom: 2%;
+    }
+
+    .Crew .container .container-text div p {
+        width: fit-content;
+        max-width: 600px;
+        margin-top: 2%;
+    }
+
+    .Crew .container .container-img {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .Crew .container .container-img span {
+        height: 40vh;
+        width: 40vw;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .Crew .container .container-img.Engineer span {
+        background-image: url("../../assets/crew/image-anousheh-ansari.png");
+    }
+
+    .Crew .container .container-img.Commander span {
+        background-image: url("../../assets/crew/image-douglas-hurley.png");
+    }
+
+    .Crew .container .container-img.Specialist span {
+        background-image: url("../../assets/crew/image-mark-shuttleworth.png");
+    }
+
+    .Crew .container .container-img.Pilot span {
+        background-image: url("../../assets/crew/image-victor-glover.png");
+    }
+
+    .Crew .container .SliderInPage {
+        height: fit-content;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        margin: 3% 0;
+    }
+
+    .Crew .SliderInPage-item {
+        height: 2vh;
+        width: 2vh;
+        display: flex;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.096);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0vh 0.75vw;
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.219);
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Crew .SliderInPage-item.active h5 {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Crew {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20vh 0vw 0vh 10vw;
+    }
+
+    .Crew span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Crew span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Crew span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Crew .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .Crew .container .container-text {
+        height: 100%;
+        display: flex;
+        width: 60%;
+        flex-direction: column-reverse;
+        padding: 5% 15% 0 0%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 0;
+    }
+
+    .Crew .container .container-text div {
+        width: 100%;
+    }
+
+    .Crew .container .container-text div span {
+        margin-bottom: 2%;
+    }
+
+    .Crew .container .container-text div p {
+        width: fit-content;
+        max-width: 500px;
+        margin-top: 3%;
+    }
+
+    .Crew .container .container-img {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .Crew .container .container-img span {
+        height: 75vh;
+        width: 55vh;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .Crew .container .container-img.Engineer span {
+        background-image: url("../../assets/crew/image-anousheh-ansari.png");
+    }
+
+    .Crew .container .container-img.Commander span {
+        background-image: url("../../assets/crew/image-douglas-hurley.png");
+    }
+
+    .Crew .container .container-img.Specialist span {
+        background-image: url("../../assets/crew/image-mark-shuttleworth.png");
+    }
+
+    .Crew .container .container-img.Pilot span {
+        background-image: url("../../assets/crew/image-victor-glover.png");
+    }
+
+    .Crew .container .SliderInPage {
+        height: 20vh;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .Crew .SliderInPage-item {
+        height: 2vh;
+        width: 2vh;
+        display: flex;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.096);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0vh 0.75vw;
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Crew .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.219);
+        transition: 0.25s;
+    }
+
+    .Crew .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Crew .SliderInPage-item.active h5 {
+        color: black;
+    }
+}

@@ -1,0 +1,404 @@
+@media screen and (max-width: 740px) {
+    .Technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/technology/background-technology-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 12.5vh 0vw 0vh 0vw;
+    }
+
+    .Technology span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Technology span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Technology span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Technology .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+    }
+
+    .Technology .container .container-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 15% 0 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Technology .container .container-text h3 {
+        font-size: 40px;
+        font-weight: 500;
+        margin: 3vh 0;
+    }
+
+    .Technology .container .container-text p {
+        color: $color2;
+        width: 90%;
+    }
+
+    .Technology .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .Technology .container .container-img {
+        display: flex;
+        width: 100%;
+        height: 45vh;
+        justify-content: flex-end;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .Technology .container .container-img.Vehicle {
+        background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+    }
+    .Technology .container .container-img.Capsule {
+        background-image: url("../../assets/technology/image-space-capsule-landscape.jpg");
+    }
+    .Technology .container .container-img.Spaceport {
+        background-image: url("../../assets/technology/image-spaceport-landscape.jpg");
+    }
+
+    .Technology .container .SliderInPage {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .Technology .SliderInPage-item {
+        height: 7.5vh;
+        width: 7.5vh;
+        display: flex;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.313);
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5vh 1vw;
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.166);
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Technology .SliderInPage-item.active h5 {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    .Technology {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: space-around;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/technology/background-technology-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 12.5vh 0vw 0vh 0vw;
+    }
+
+    .Technology span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .Technology span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+    }
+
+    .Technology span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Technology .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+    }
+
+    .Technology .container .container-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 15% 0 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Technology .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .Technology .container .container-img {
+        display: flex;
+        width: 100%;
+        height: 45vh;
+        justify-content: flex-end;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .Technology .container .container-img.Vehicle {
+        background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+    }
+    .Technology .container .container-img.Capsule {
+        background-image: url("../../assets/technology/image-space-capsule-landscape.jpg");
+    }
+    .Technology .container .container-img.Spaceport {
+        background-image: url("../../assets/technology/image-spaceport-landscape.jpg");
+    }
+
+    .Technology .container .SliderInPage {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .Technology .SliderInPage-item {
+        height: 7.5vh;
+        width: 7.5vh;
+        display: flex;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.313);
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5vh 1vw;
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.166);
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Technology .SliderInPage-item.active h5 {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Technology {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/technology/background-technology-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20vh 0vw 10vh 10vw;
+    }
+
+    .Technology span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Technology span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Technology span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Technology .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+    }
+
+    .Technology .container .container-text {
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        padding: 0 15% 0 0%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Technology .container .container-text div {
+        width: 70%;
+    }
+
+    .Technology .container .container-img {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        justify-content: flex-end;
+    }
+
+    .Technology .container .container-img span {
+        min-height: 100%;
+        width: 80%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .Technology .container .container-img.Vehicle span {
+        background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+    }
+    .Technology .container .container-img.Capsule span {
+        background-image: url("../../assets/technology/image-space-capsule-portrait.jpg");
+    }
+    .Technology .container .container-img.Spaceport span {
+        background-image: url("../../assets/technology/image-spaceport-portrait.jpg");
+    }
+
+    .Technology .container .SliderInPage {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Technology .SliderInPage-item {
+        height: 10vh;
+        width: 10vh;
+        display: flex;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.313);
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5vh 0;
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item.active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item.active:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Technology .SliderInPage-item:hover {
+        background-color: rgba(255, 255, 255, 0.166);
+        transition: 0.25s;
+    }
+
+    .Technology .SliderInPage-item h5 {
+        font-size: 3vh;
+    }
+
+    .Technology .SliderInPage-item.active h5 {
+        color: black;
+    }
+}

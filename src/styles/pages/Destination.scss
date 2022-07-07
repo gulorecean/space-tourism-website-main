@@ -1,0 +1,553 @@
+@media screen and (max-width: 740px) {
+    .Destination {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/destination/background-destination-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 10vh 0vw;
+    }
+
+    .Destination span:first-child {
+        display: flex;
+        width: fit-content;
+        height: min-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .Destination span:first-child h5:first-child {
+        font-size: 20px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Destination span:first-child h5:last-child {
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Destination .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:flex-end;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    .Destination .container .container-text {
+        height: 50%;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0;
+        text-align: center;
+    }
+
+
+    .Destination .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .Destination .container .container-text div ul {
+        height: 20vh;
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 7.5vh;
+    }
+
+    .Destination .container .container-text div ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Destination .container .container-text div p::after {
+        content: "";
+        display: flex;
+        width: 80%;
+        height: 0.2vh;
+        background-color: white;
+        position: absolute;
+        opacity: 0.3;
+        margin:5vh 0;
+    }
+
+    .Destination .container .container-text div span {
+        margin-bottom: 2%;
+    }
+    .Destination .container .container-text div p {
+        width: 90%;
+        margin-top: 3%;
+    }
+
+    .Destination .container .container-img {
+        display: flex;
+        width: 25vh;
+        height: 25vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Destination .container .container-img span {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Destination .container .container-img.Moon span {
+        background-image: url("../../assets/destination/moon.png");
+    }
+    .Destination .container .container-img.Mars span {
+        background-image: url("../../assets/destination/mars.png");
+    }
+    .Destination .container .container-img.Titan span {
+        background-image: url("../../assets/destination/titan.png");
+    }
+    .Destination .container .container-img.Europa span{
+        background-image: url("../../assets/destination/europa.png");
+    }
+
+    .Destination .container .SliderInPage {
+        height:20vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        margin: 2vh 0;
+    }
+
+    .Destination .SliderInPage-item {
+        height: 30px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0vh 1.75vw;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item::after {
+        display: flex;
+        content: "";
+        height: 0.3vh;
+        width: 100%;
+        background-color: $color3;
+        opacity: 0;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item.active::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item.active:hover::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item:hover::after {
+        transition: 0.25s;
+        opacity: 0.4;
+    }
+
+    .Destination .SliderInPage-item h5 {
+        font-weight: 400;
+    }
+
+    .Destination .SliderInPage-item.active h5 {
+        color: $color3;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    .Destination {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/destination/background-destination-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 15vh 0vw;
+    }
+
+    .Destination span:first-child {
+        display: flex;
+        width: fit-content;
+        height: min-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .Destination span:first-child h5:first-child {
+        font-size: 15px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Destination span:first-child h5:last-child {
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Destination .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 5% 0%;
+    }
+
+    .Destination .container .container-text {
+        height: 50%;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0;
+        text-align: center;
+    }
+
+
+    .Destination .container .container-text div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .Destination .container .container-text div ul {
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7.5vh;
+    }
+
+    .Destination .container .container-text div p::after {
+        content: "";
+        display: flex;
+        width: 80%;
+        height: 0.2vh;
+        background-color: white;
+        position: absolute;
+        opacity: 0.3;
+        margin:5vh 0;
+    }
+
+    .Destination .container .container-text div span {
+        margin-bottom: 2%;
+    }
+    .Destination .container .container-text div p {
+        width: 90%;
+        margin-top: 3%;
+    }
+
+    .Destination .container .container-img {
+        display: flex;
+        width: 30vh;
+        height: 30vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Destination .container .container-img span {
+        height: 75vh;
+        width: 55vh;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Destination .container .container-img.Moon span {
+        background-image: url("../../assets/destination/moon.png");
+    }
+    .Destination .container .container-img.Mars span {
+        background-image: url("../../assets/destination/mars.png");
+    }
+    .Destination .container .container-img.Titan span {
+        background-image: url("../../assets/destination/titan.png");
+    }
+    .Destination .container .container-img.Europa span{
+        background-image: url("../../assets/destination/europa.png");
+    }
+
+    .Destination .container .SliderInPage {
+        height:20vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
+    }
+
+    .Destination .SliderInPage-item {
+        height: 30px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0vh 0.75vw;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item::after {
+        display: flex;
+        content: "";
+        height: 0.3vh;
+        width: 100%;
+        background-color: $color3;
+        opacity: 0;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item.active::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item.active:hover::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item:hover::after {
+        transition: 0.25s;
+        opacity: 0.4;
+    }
+
+    .Destination .SliderInPage-item h5 {
+        font-weight: 400;
+    }
+
+    .Destination .SliderInPage-item.active h5 {
+        color: $color3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Destination {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../assets/destination/background-destination-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20vh 0vw 0vh 10vw;
+    }
+
+    .Destination span:first-child {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Destination span:first-child h5:first-child {
+        font-size: 30px;
+        letter-spacing: 2.7px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 900;
+        opacity: 0.3;
+
+    }
+
+    .Destination span:first-child h5:last-child {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: $color3;
+        margin-right: 1vw;
+        font-weight: 400;
+    }
+
+    .Destination .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0 10% 0 5%;
+    }
+
+    .Destination .container .container-text {
+        height: 80%;
+        display: flex;
+        width: max-content;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0;
+        transform: translate(0, -20vh);
+    }
+
+    .Destination .container .container-text div:first-child {
+        width: 100%;
+    }
+    .Destination .container .container-text div ul {
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10vh;
+    }
+
+    .Destination .container .container-text div p::after {
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 0.2vh;
+        background-color: white;
+        position: absolute;
+        opacity: 0.3;
+        margin:5vh 0;
+    }
+
+    .Destination .container .container-text div span {
+        margin-bottom: 2%;
+    }
+    .Destination .container .container-text div p {
+        width: fit-content;
+        max-width: 500px;
+        margin-top: 3%;
+    }
+
+    .Destination .container .container-img {
+        display: flex;
+        width: 35%;
+        height: 100%;
+        overflow: hidden;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .Destination .container .container-img span {
+        height: 90%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Destination .container .container-img.Moon span {
+        background-image: url("../../assets/destination/moon.png");
+    }
+    .Destination .container .container-img.Mars span {
+        background-image: url("../../assets/destination/mars.png");
+    }
+    .Destination .container .container-img.Titan span {
+        background-image: url("../../assets/destination/titan.png");
+    }
+    .Destination .container .container-img.Europa span{
+        background-image: url("../../assets/destination/europa.png");
+    }
+
+    .Destination .container .SliderInPage {
+        height:20vh;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .Destination .SliderInPage-item {
+        height: 30px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0vh 0.75vw;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item::after {
+        display: flex;
+        content: "";
+        height: 0.3vh;
+        width: 100%;
+        background-color: $color3;
+        opacity: 0;
+        transition: 0.25s;
+    }
+
+    .Destination .SliderInPage-item.active::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item.active:hover::after {
+        opacity: 1;
+    }
+
+    .Destination .SliderInPage-item:hover::after {
+        transition: 0.25s;
+        opacity: 0.4;
+    }
+
+    .Destination .SliderInPage-item h5 {
+        font-weight: 400;
+    }
+
+    .Destination .SliderInPage-item.active h5 {
+        color: $color3;
+    }
+}

@@ -1,0 +1,34 @@
+.Langding-Page-Main-Btn {
+    display: flex;
+    height: 30vh;
+    width: 30vh;
+    background-color: $color3;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Langding-Page-Main-Btn h5 {
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.Langding-Page-Main-Btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    background-color: $color3;
+    filter: opacity(0.5);
+    transform: scale(0.75);
+    transition: 0.5s ease-in-out;
+}
+
+.Langding-Page-Main-Btn:hover::before {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
